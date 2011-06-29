@@ -28,8 +28,7 @@ namespace DevDefined.NuGet.Extensions
 			// No-op
 		}
 
-		[return: Dynamic]
-		public object GetPropertyValue(string propertyName)
+		public dynamic GetPropertyValue(string propertyName)
 		{
 			if ((propertyName != null) && propertyName.Equals("RootNamespace", StringComparison.OrdinalIgnoreCase))
 			{
